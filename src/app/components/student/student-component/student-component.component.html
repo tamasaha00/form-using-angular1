@@ -1,0 +1,46 @@
+<!-- <p>student-component works!</p> -->
+
+<div class="card">
+    <div class="card-body">
+        <div class="container h-100">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-10 col-md-8 col-lg-6">
+                    <!-- Form -->
+                    <form class="form-example">
+                        <!-- Input fields -->
+                        <div class="form-group">
+                            <label for="userId">ID:</label>
+                            <input [(ngModel)]="id" name="id" type="number" class="form-control" id="userId"
+                                placeholder="id ">
+                        </div>
+                        <div class="form-group ">
+                            <label for="Name ">Name:</label>
+                            <input [(ngModel)]="name" type="text " name="id1" class="form-control name " id="username "
+                                placeholder="username ">
+                        </div>
+                        <div class="form-group ">
+                            <label for="quantity">Quantity:</label>
+                            <input [(ngModel)]="quantity" type="number " name="id2" class="form-control number "
+                                id="usernumber " placeholder="quantity ">
+                        </div>
+                        <div class="form-group ">
+                            <label for="Name ">Rate:</label>
+                            <input [(ngModel)]="rate" type="number" name="id3" class="form-control rate "
+                                id="userrate " placeholder="rate ">
+                        </div>
+                        <div class="form-group ">
+                            <label for="Unit ">Unit:</label>
+                            <select [(ngModel)]="unit" name="unit" class="form-select form-select-sm"
+                                aria-label=".form-select-sm example">
+                                <option *ngFor="let x of units">{{x}}</option>
+                            </select>
+                        </div>
+                        <button (click)="k()" type="submit " class="btn btn-primary btn-customized ">Login</button>
+                        <!-- End input fields -->
+                    </form>
+                    <!-- Form end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
